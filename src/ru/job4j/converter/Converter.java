@@ -12,8 +12,8 @@ public class Converter {
      * @return converted value in euro
      */
     public static int rubleToEuro(int value) {
-        int rsl = value / 70;
-        return rsl;
+        int result = value / 70;
+        return result;
     }
 
     /**
@@ -22,8 +22,8 @@ public class Converter {
      * @return converted value in dollar
      */
     public static int rubleToDollar(int value) {
-        int rsl = value / 60;
-        return rsl;
+        int result = value / 60;
+        return result;
     }
 
     /**
@@ -35,7 +35,7 @@ public class Converter {
         /**
          * Amount of rubles
          */
-        int in = 140;
+        int input = 140;
 
         /**
          * Amount of euro
@@ -45,17 +45,17 @@ public class Converter {
         /**
          * Converted value in euro
          */
-        int out = rubleToEuro(in);
+        int output = rubleToEuro(input);
 
         /**
          * Validate calculation
          */
-        boolean passed = expected == out;
+        boolean passed = expected == output;
         System.out.println("140 rubles are 2. Test result : " + passed);
-        in = 180;
+        input = 180;
         expected = 3;
-        out = rubleToDollar(in);
-        passed = expected == out;
+        output = rubleToDollar(input);
+        passed = expected == output;
         System.out.println("180 rubles are 3. Test result : " + passed);
     }
 }

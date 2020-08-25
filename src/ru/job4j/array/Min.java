@@ -2,11 +2,11 @@ package ru.job4j.array;
 
 public class Min {
 
-    public static int findMin(int[] array) {
-        int min = array[0];
-        for (int i = 1; i < array.length; i++) {
-            if (min > array[i]) {
-                min = array[i];
+    public static int findMin(int[] data) {
+        int min = data[0];
+        for (int i = 1; i < data.length; i++) {
+            if (min > data[i]) {
+                min = data[i];
             }
         }
         return min;
